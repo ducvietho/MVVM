@@ -41,7 +41,7 @@ public class MainViewModel extends BaseObservable implements MainContract.ViewMo
     @Override
     public void onSuccess(ArrayList<User> users) {
         mAdapterUser = new RecyclerAdapterUser(mContext,users);
-
+        setAdapterUser(mAdapterUser);
     }
 
     @Override
